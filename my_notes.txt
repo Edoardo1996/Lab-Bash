@@ -1,0 +1,53 @@
+BASH (Unix Shell) -- My notes
+
+Commands:
+- ls
+List all file and directories in the work directory
+	. parameter -l:
+	  list all file and directory more in detail
+	. *.<ext> Displays all file with the desired extension
+
+- echo <smth_to_print>
+Prints string to screen, but also environment variables.
+- echo "<some_text>" >> <filename>
+Append text to a file
+
+- mkdir <new_dir>
+Create a new directory in working directory
+
+- rm -d <dir>
+Remove an existing directory
+
+- cp <path_file_to_copy> <path_in_which_to_copy>
+Copy a file to another location
+	. it is possible to concat statements with semicolon ;
+
+- cat <filename>
+Visualize a text file (only .txt?) in bash shell.
+
+- less <filename>
+Visualize a cut-content of a long (.txt?) file
+	. with flag -FX behaves like cat
+
+- head -<n> <filename>
+Print in the shell the first <n> rows of <filename>
+
+- tail -<n-1> <filename>
+Print in the shell the last <n> rows of <filename>
+
+- sed -i 's/old-text/new-text/g' input.txt
+The s is the substitute command of sed for find and replace
+It tells sed to find all occurrences of ‘old-text’ and replace with ‘new-text’ in a file named input.txt
+
+- whoami
+Command whoami tells us the domain name also.
+
+- pwd
+Displays current working directory
+
+- cat <filename> | wc -l
+The wc command is used to find the number of lines, characters, words, and bytes of a file.
+To find the number of lines using wc, we add the -l option. This will give us the total number of lines and the name of the file.
+We can tell the shell to redirect the file to standard input of the wc -l command. This will give us the number of lines without the filename.
+
+
